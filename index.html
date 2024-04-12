@@ -5,11 +5,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikerz Zone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/bbfa251da8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="bg-[#264653] mb-20">
+        <nav class="py-5 text-white text-base font-medium">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Shop</a>
+                            </li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
 
+                </div>
+                <div class="navbar-end hidden lg:flex lg:gap-x-16">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>Shop</a>
+                        </li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                    <div>
+                        <a class="btn bg-[#E76F51] text-white border-0 px-8 hover:bg-orange-800">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="hero lg:py-20 py-5 text-white">
+                <div class="hero-content flex-col lg:flex-row-reverse lg:gap-10">
+                    <img src="images/others/latest1.png" class="max-w-sm w-full" />
+                    <div class="lg:w-1/2">
+                        <h1 class="text-5xl font-bold uppercase">Honda cbr 300r</h1>
+                        <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione eos
+                            nostrum suscipit pariatur! Quod quo, fugit cum modi minus molestias exercitationem ipsam
+                            doloremque in minima tenetur consectetur ut libero.</p>
+                        <button class="btn  bg-[#E76F51] text-white border-0 px-8 hover:bg-orange-800">Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 class="text-5xl text-center mb-5">Featured Bikes in This Year</h1>
+            <p class="text-[#E76F51] text-center mb-14">Best bike collection</p>
+            <div class="flex flex-col lg:flex-row lg:gap-5 gap-2 justify-center lg:mb-20 mb-5">
+                <img src="images/others/latest1.png" alt="">
+                <img src="images/others/latest2.png" alt="">
+                <img src="images/others/latest3.png" alt="">
+            </div>
+        </section>
+        <section>
+            <h1 class="text-5xl text-center mb-5">Latest News</h1>
+            <div class="flex flex-col lg:flex-row gap-5 lg:mb-20 mb-5">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/slider/bike2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ducati XDIAVEL s-73</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit nostrum minima quae
+                            quas numquam deleniti incidunt dolore fugiat distinctio?</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#E76F51] text-white font-semibold">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/slider/bike3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Motocycles & Scooters</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit nostrum minima quae
+                            quas numquam deleniti incidunt dolore fugiat distinctio?</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#E76F51] text-white font-semibold">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/slider/bike4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">2021 Honda CBR500R</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit nostrum minima quae
+                            quas numquam deleniti incidunt dolore fugiat distinctio?</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#E76F51] text-white font-semibold">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20">
+            <h1 class="text-5xl text-center mb-8">Happy <span class="text-[#E76F51]">Clients says</span></h1>
+            <div class="flex flex-col lg:flex-row gap-5">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/others/user-1.png" alt="Shoes" class="w-3/4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, tenetur et eveniet rerum
+                            voluptates nisi odit consequatur veniam commodi! Dolorem?</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-regular fa-star  text-[#E77C40]"></i>
+                        </div>
+                        <h5 class="text-[#23A6F0] text-sm">Regina Miles</h5>
+                        <h6 class="text-xs">Banker</h6>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/others/user-2.png" alt="Shoes" class="w-3/4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, tenetur et eveniet rerum
+                            voluptates nisi odit consequatur veniam commodi! Dolorem?</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-regular fa-star  text-[#E77C40]"></i>
+                        </div>
+                        <h5 class="text-[#23A6F0] text-sm">Regina Miles</h5>
+                        <h6 class="text-xs">Banker</h6>
+                    </div>
+                </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/others/user-3.png" alt="Shoes" class="w-3/4" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, tenetur et eveniet rerum
+                            voluptates nisi odit consequatur veniam commodi! Dolorem?</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-solid fa-star  text-[#E77C40]"></i>
+                            <i class="fa-regular fa-star  text-[#E77C40]"></i>
+                        </div>
+                        <h5 class="text-[#23A6F0] text-sm">Regina Miles</h5>
+                        <h6 class="text-xs">Banker</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5 lg:mb-20">
+            <h1 class="text-5xl text-center lg:mb-20">Frequently Asked <span class="text-[#E76F51]">Questions</span>
+            </h1>
+            <div class="flex flex-col lg:flex-row lg:px-5">
+                <div class="w-1/2">
+                    <img src="images/others/faq.png" alt="">
+                </div>
+                <div class="w-1/2">
+                    <div class="collapse bg-base-200 mb-2">
+                        <input type="radio" name="my-accordion-1" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            What are the most important things I should know about riding a bike?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ex possimus maxime
+                                officia
+                                est sapiente? Dicta tempore distinctio quisquam eveniet dolor quae iusto exercitationem
+                                reiciendis quidem animi. Expedita, deleniti ipsam.</p>
+                        </div>
+                    </div>
+                    <div class="collapse bg-base-200 mb-2">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title text-xl font-medium">
+                            How can I tell if my helmet is old and I need a new one?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti fugiat pariatur eius
+                                inventore vitae voluptatem deserunt est, repellendus vero in!</p>
+                        </div>
+                    </div>
+                    <div class="collapse bg-base-200 mb-2">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title text-xl font-medium">
+                            My bike has been in storage, is it safe to ride?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores placeat distinctio
+                                temporibus vel voluptates voluptatum asperiores quae excepturi quisquam beatae, quam
+                                velit
+                                necessitatibus, atque a corporis! Dicta, modi dolor cumque at fuga accusamus facilis ut!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="collapse bg-base-200 mb-2">
+                        <input type="radio" name="my-accordion-1" />
+                        <div class="collapse-title text-xl font-medium">
+                            What rules should I follow when riding my bike?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur at reiciendis ipsam
+                                cupiditate temporibus eaque aperiam aliquam saepe quod, commodi magni optio quidem
+                                repellat
+                                possimus molestias quae deserunt maxime ab pariatur assumenda blanditiis accusantium
+                                dolorum
+                                sunt. Accusamus obcaecati aperiam nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer pt-10 py-10 px-32 bg-neutral text-neutral-content flex justify-between">
+        <nav>
+            <div class="flex gap-5">
+                <a href="link link-hover">Download Now</a>
+                <a href="link link-hover">Licence</a>
+            </div>
+            <div class="flex gap-4">
+                <a class="link link-hover">About</a>
+                <a class="link link-hover">Feature</a>
+                <a class="link link-hover">Pricing</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">Help</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </div>
+            <p>&copy; 2020 bike. All rights reserved</p>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Get the App</h6>
+            <img class="w-2/5" src="images/others/android.png" alt="">
+            <img class="w-2/5" src="images/others/ios.png" alt="">
+        </nav>
+    </footer>
 </body>
 
 </html>
